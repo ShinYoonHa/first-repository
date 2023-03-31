@@ -20,11 +20,11 @@ public class AppConfig {
     }
     @Bean
     MemberStorage memberStorage() {
-        return new DbMemberStorage();
+        return new FileMemberStorage();
     }
     @Bean
     FeePolicy feePolicy() {
-        return new OldFeePolicy();
+        return new NewFeePolicy();
     }
 
 }
